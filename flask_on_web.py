@@ -12,8 +12,8 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
 
-    vectorizer = joblib.load(open("vectorizer.pkl",'rb'))
-    classifier = joblib.load(open('LR_model.pkl','rb'))
+    vectorizer = joblib.load(open("Model-pkl/vectorizer.pkl",'rb'))
+    classifier = joblib.load(open('Model-pkl/LR_model.pkl','rb'))
 
     if request.method == 'POST':
         message = request.form['message']

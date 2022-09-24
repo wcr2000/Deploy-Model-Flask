@@ -10,8 +10,8 @@ def query_example():
     # if key doesn't exist, returns None
     # vectorizer = joblib.load(open("vectorizer.pkl",'rb'))
     # classifier = joblib.load(open('LR_model.pkl','rb'))
-    vectorizer = joblib.load("vectorizer.pkl")
-    classifier = joblib.load("LR_model.pkl")
+    vectorizer = joblib.load("Model-pkl/vectorizer.pkl")
+    classifier = joblib.load("Model-pkl/LR_model.pkl")
 
     message = request.args.get('message')
 
